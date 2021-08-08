@@ -1,0 +1,24 @@
+.button {
+
+
+
+}
+
+.button-common {
+  padding: 18px 30px;
+  margin: 0 auto;
+  background-color: @orange;
+  font-family: 'OpenSans-Bold', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  .transition(all .3s);
+  @media (min-width: 880px){
+    margin-top: 0;
+  }
+  &:hover {
+    .border-radius(10px);
+    background-color: #D35B0E;
+  }
+}
