@@ -1,24 +1,18 @@
-.button {
-
-
-
-}
-
-.button-common {
-  padding: 18px 30px;
-  margin: 0 auto;
-  background-color: @orange;
-  font-family: 'OpenSans-Bold', sans-serif;
-  text-decoration: none;
+.more-info-btn {
   color: #fff;
-  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $red-main;
+  border-radius: 10px;
   display: inline-block;
-  .transition(all .3s);
-  @media (min-width: 880px){
-    margin-top: 0;
+  &__large {
+    padding: 20px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
   }
-  &:hover {
-    .border-radius(10px);
-    background-color: #D35B0E;
+  &__mini {
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 700;
   }
 }

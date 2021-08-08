@@ -4,7 +4,7 @@ html {
 
 body {
   position: relative;
-  background-color: @browser-background-color;
+  background-color: $browser-background-color;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;

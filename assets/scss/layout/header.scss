@@ -1,69 +1,75 @@
-.header-wrapper {
-  padding: 10px 15px;
-  text-align: center;
-  border-bottom: 1px solid #333;
-}
+
 
 .header {
 
-  padding: 20px 0;
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: $red-dark;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-  @media(min-width: 720px){
-    padding: 0;
-    flex-direction: row;
+  &__wrapper {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media(min-width: 720px){
+      padding: 0;
+      flex-direction: row;
+    }
+
+
+    h1 {
+      // width: 400px;
+      // margin-bottom: 12px;
+      text-align: center;
+      @media(min-width: 720px){
+        font-size: 1.3em;
+        font-weight: 700;
+        text-align: left;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: $grey-hover;
+        }
+      }
+    }
   }
 
-  
-
-  // width: 100%;
-  // height: 48px;
-  // margin: 0;
-  // padding: 0;
-  // position: fixed;
-  // -webkit-transform: translateZ(0);
-  // top: 0;
-  // left: 0;
-  // z-index: 999;
-  // font-family: 'OpenSans-Regular', sans-serif;
-  // @media (min-width: 1000px){
-  //   height: 60px;
-  // }
-
-  h1 {
-    width: 260px;
-    margin-bottom: 12px;
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media(min-width: 720px){
-      margin-bottom: 0;
+      flex-direction: row;
     }
     a {
+      margin-bottom: 15px;
+      // text-transform: uppercase;
+      font-size: 1.3em;
+      color: #fff;
+      font-weight: 700;
       text-decoration: none;
+      @media(min-width: 720px){
+        margin-bottom: 0;
+        margin-left: 40px;
+      }
+      &:hover {
+        color: $grey-hover;
+      }
     }
   }
+
 }
 
-#header-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media(min-width: 720px){
-    flex-direction: row;
-  }
-  a {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    color: #333;
-    font-weight: 700;
-    @media(min-width: 720px){
-      margin-bottom: 0;
-      margin-left: 40px;
-    }
-  }
-}
+
 

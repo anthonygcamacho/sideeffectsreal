@@ -1,4 +1,4 @@
-// import './../scss/main.scss';
+import './../scss/main.scss';
 
 // const { add } = require('./test');
 
@@ -6,4 +6,4 @@
 
 // console.log(add(2, 7))
 
-// console.log('fart')
+console.log('fart')
