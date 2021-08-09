@@ -43,14 +43,16 @@
 
 // // Layout
 @import "layout/header";
+@import "layout/footer";
 // @import "layout/content";
-// @import "layout/footer";
 
 // // Pages
 @import "pages/home";
 
 // // Module
 @import "module/buttons";
+@import "module/printables";
+@import "module/instructions";
 
 // // State
 // // @import "state/state";

@@ -1,0 +1,18 @@
+.printables {
+    &__wrapper {
+
+    }
+    &__printable {
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-position: center;
+        background-size: contain;
+    }
+    &__01 {
+        background-image: url('../imgs/printable-01.png');
+    }
+    &__02 {
+        background-image: url('../imgs/printable-02.png');
+    }
+}

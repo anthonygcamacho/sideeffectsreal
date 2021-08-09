@@ -164,6 +164,29 @@ body {
   color: #d7d7d7;
 }
 
+.footer {
+  padding: 20px 15px;
+  background-color: #505050;
+  color: #d3d3d3;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.footer a {
+  color: #d3d3d3;
+}
+.footer .footer__row {
+  margin: 20px 0;
+  text-align: center;
+}
+.footer .footer__row__1 a {
+  margin: 0 12px;
+}
+.footer .footer__row__2 a {
+  margin: 0 12px;
+}
+.footer .footer__row__3 span {
+  margin: 0 6px;
+}
 .home .banner {
   margin-top: 50px;
 }
@@ -220,7 +243,7 @@ body {
   color: #000;
 }
 .home .protests {
-  background-color: #000;
+  background-color: #1c1c1c;
   text-align: center;
 }
 .home .protests__header-wrapper {
@@ -303,6 +326,20 @@ body {
   padding: 15px 20px;
   font-size: 1em;
   font-weight: 700;
+}
+
+.printables__printable {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-position: center;
+  background-size: contain;
+}
+.printables__01 {
+  background-image: url("/printable-01.1fccfff4.png");
+}
+.printables__02 {
+  background-image: url("/printable-02.bf4963b3.png");
 }
 
 /*# sourceMappingURL=/main.fb6bbcaf.css.map */
