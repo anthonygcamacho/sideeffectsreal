@@ -166,7 +166,7 @@ body {
 
 .footer {
   padding: 20px 15px;
-  background-color: #505050;
+  background-color: #1c1c1c;
   color: #d3d3d3;
   text-transform: uppercase;
   font-size: 14px;
@@ -223,7 +223,7 @@ body {
   text-align: center;
 }
 .home .about-home h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 2.1em;
   font-weight: 700;
   line-height: 1.1em;
@@ -243,7 +243,7 @@ body {
   color: #000;
 }
 .home .protests {
-  background-color: #1c1c1c;
+  background-color: #fff;
   text-align: center;
 }
 .home .protests__header-wrapper {
@@ -256,11 +256,10 @@ body {
   line-height: 1.1em;
   color: #fff;
 }
-.home .protests__washingtondc {
+.home .protests__protest {
   width: 1000px;
   height: 300px;
   margin: 20px auto;
-  background-image: url("/home-protest-washingtondc.a9084d76.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -268,45 +267,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-.home .protests__washingtondc h3 {
-  margin-bottom: 20px;
-  font-size: 1.5em;
+.home .protests__protest h3 {
+  margin-bottom: 25px;
+  font-size: 1.8em;
   font-weight: 700;
   color: #fff;
+}
+.home .protests__washingtondc {
+  background-image: url("/home-protest-washingtondc.a9084d76.png");
 }
 .home .protests__media {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 720px) {
-  .home .protests__media {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-.home .protests__media__protest {
-  width: 320px;
-  height: 300px;
-  margin: 0 10px 20px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-.home .protests__media__protest h3 {
-  margin-bottom: 20px;
-  font-size: 1.2em;
-  font-weight: 700;
-}
-.home .protests__media__nbc {
-  background-image: url("/home-protest-nbc.963b2ac2.png");
-}
-.home .protests__media__cnn {
-  background-image: url("/home-protest-cnn.61f91009.png");
-}
-.home .protests__media__foxnews {
-  background-image: url("/home-protest-foxnews.f6fff161.png");
+  background-image: url("/home-protest-media.3abbc7d5.png");
 }
 
 .more-info-btn {
@@ -326,6 +297,10 @@ body {
   padding: 15px 20px;
   font-size: 1em;
   font-weight: 700;
+}
+.more-info-btn:hover {
+  text-decoration: underline;
+  background-color: #f62828;
 }
 
 .printables__printable {

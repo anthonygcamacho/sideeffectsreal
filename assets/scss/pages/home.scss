@@ -37,7 +37,7 @@
     padding: 60px 20px;
     text-align: center;
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 2.1em;
       font-weight: 700;
       line-height: 1.1em;
@@ -60,7 +60,7 @@
   }
 
   .protests {
-    background-color: #1c1c1c;
+    background-color: #fff;
     text-align: center;
     &__header-wrapper {
       padding: 40px 20px;
@@ -72,11 +72,10 @@
         color: #fff;
       }
     }
-    &__washingtondc {
+    &__protest {
       width: 1000px;
       height: 300px;
       margin: 20px auto;
-      background-image: url('../imgs/home-protest-washingtondc.png');
       background-position: center;
       background-size: cover;
       display: flex;
@@ -84,44 +83,50 @@
       justify-content: center;
       align-items: center;
       h3 {
-        margin-bottom: 20px;        
-        font-size: 1.5em;
+        margin-bottom: 25px;        
+        font-size: 1.8em;
         font-weight: 700;
         color: #fff;
       }
     }
-    &__media {
-      display: flex;
-      flex-direction: column;
-      @media (min-width: 720px) {
-        flex-direction: row;
-        justify-content: center;
-      }
-      &__protest {
-        width: 320px;
-        height: 300px;
-        margin: 0 10px 20px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        h3 {
-          margin-bottom: 20px;        
-          font-size: 1.2em;
-          font-weight: 700;
-        }
-      }
-      &__nbc {
-        background-image: url('../imgs/home-protest-nbc.png');
-      }
-      &__cnn {
-        background-image: url('../imgs/home-protest-cnn.png');
-      }
-      &__foxnews {
-        background-image: url('../imgs/home-protest-foxnews.png');
-      }
+    &__washingtondc {
+      background-image: url('../imgs/home-protest-washingtondc.png');
     }
+    &__media {
+      background-image: url('../imgs/home-protest-media.png');
+    }
+    // &__media {
+    //   display: flex;
+    //   flex-direction: column;
+    //   @media (min-width: 720px) {
+    //     flex-direction: row;
+    //     justify-content: center;
+    //   }
+    //   &__protest {
+    //     width: 320px;
+    //     height: 300px;
+    //     margin: 0 10px 20px 10px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: #fff;
+    //     h3 {
+    //       margin-bottom: 20px;        
+    //       font-size: 1.2em;
+    //       font-weight: 700;
+    //     }
+    //   }
+    //   &__nbc {
+    //     background-image: url('../imgs/home-protest-nbc.png');
+    //   }
+    //   &__cnn {
+    //     background-image: url('../imgs/home-protest-cnn.png');
+    //   }
+    //   &__foxnews {
+    //     background-image: url('../imgs/home-protest-foxnews.png');
+    //   }
+    // }
   }
 
 }
