@@ -20,7 +20,7 @@ router.get('/privacy-policy', privacyPage);
 router.get('/terms-of-service', tosPage);
 router.get('/sitemap.xml', sitemapPage);
 
-router.get('/protest-media', protestmediaPage);
+router.get('/protest-mainstream-media', protestmediaPage);
 router.get('/protest-washington-dc', protestwashingtondcPage);
 
 router.get('*', notFoundPage);
