@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h2 {
+    h3 {
       padding: 40px 20px;
       font-size: 3em;
       font-weight: 900;
@@ -36,13 +36,12 @@
   .about-home {
     padding: 60px 20px;
     text-align: center;
-    h2 {
+    h3 {
       margin-bottom: 30px;
       font-size: 2.1em;
       font-weight: 700;
       line-height: 1.1em;
       color: #000;
-
     }
     &__content-wrapper {
       width: 800px;
@@ -65,7 +64,7 @@
     &__header-wrapper {
       padding: 40px 20px;
       background-color: $red-main;
-      h2 {
+      h3 {
         font-size: 2.1em;
         font-weight: 700;
         line-height: 1.1em;
@@ -82,7 +81,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      h3 {
+      h4 {
         margin-bottom: 25px;        
         font-size: 1.8em;
         font-weight: 700;
@@ -95,38 +94,6 @@
     &__media {
       background-image: url('../imgs/home-protest-media.png');
     }
-    // &__media {
-    //   display: flex;
-    //   flex-direction: column;
-    //   @media (min-width: 720px) {
-    //     flex-direction: row;
-    //     justify-content: center;
-    //   }
-    //   &__protest {
-    //     width: 320px;
-    //     height: 300px;
-    //     margin: 0 10px 20px 10px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     color: #fff;
-    //     h3 {
-    //       margin-bottom: 20px;        
-    //       font-size: 1.2em;
-    //       font-weight: 700;
-    //     }
-    //   }
-    //   &__nbc {
-    //     background-image: url('../imgs/home-protest-nbc.png');
-    //   }
-    //   &__cnn {
-    //     background-image: url('../imgs/home-protest-cnn.png');
-    //   }
-    //   &__foxnews {
-    //     background-image: url('../imgs/home-protest-foxnews.png');
-    //   }
-    // }
   }
 
 }

@@ -211,7 +211,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.home .ameri-first h2 {
+.home .ameri-first h3 {
   padding: 40px 20px;
   font-size: 3em;
   font-weight: 900;
@@ -222,7 +222,7 @@ body {
   padding: 60px 20px;
   text-align: center;
 }
-.home .about-home h2 {
+.home .about-home h3 {
   margin-bottom: 30px;
   font-size: 2.1em;
   font-weight: 700;
@@ -250,7 +250,7 @@ body {
   padding: 40px 20px;
   background-color: #ff0000;
 }
-.home .protests__header-wrapper h2 {
+.home .protests__header-wrapper h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 1.1em;
@@ -267,7 +267,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.home .protests__protest h3 {
+.home .protests__protest h4 {
   margin-bottom: 25px;
   font-size: 1.8em;
   font-weight: 700;
@@ -303,18 +303,135 @@ body {
   background-color: #f62828;
 }
 
-.printables__printable {
-  width: 100px;
-  height: 100px;
+.protest-banner {
+  margin-top: 50px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.protest-banner h2 {
+  padding: 130px 20px;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.1em;
+  color: #fff;
+}
+.protest-banner__media {
+  background-image: url("/home-protest-media.3abbc7d5.png");
+}
+.protest-banner__washingtondc {
+  background-image: url("/home-protest-washingtondc.a9084d76.png");
+}
+
+.protest-instructions {
+  padding: 60px 20px 0px 20px;
+  text-align: center;
+}
+.protest-instructions h3 {
+  margin-bottom: 30px;
+  font-size: 2.1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  color: #000;
+}
+.protest-instructions__content-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.protest-instructions__content-wrapper p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  color: #000;
+}
+.protest-instructions__content-wrapper__point {
+  font-weight: 600;
+}
+
+.protest-locations {
+  padding: 60px 20px;
+  text-align: center;
+}
+.protest-locations h3 {
+  margin-bottom: 30px;
+  font-size: 2.1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  color: #000;
+}
+.protest-locations__locations {
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.protest-locations__location {
+  width: 280px;
+  height: 160px;
+  margin: 0 20px 40px 20px;
+  padding: 20px;
+  border: 10px solid #c9c9c9;
+}
+.protest-locations__location h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #000;
+}
+.protest-locations__location a {
+  color: blue;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+.protest-locations__location a:hover {
+  text-decoration: underline;
+}
+
+.protest-printables {
+  padding: 40px 20px 0px 20px;
+  text-align: center;
+}
+.protest-printables h3 {
+  margin-bottom: 30px;
+  font-size: 2.1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  color: #000;
+}
+.protest-printables__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.protest-printables__printable {
+  margin: 0 20px;
   display: block;
   background-position: center;
   background-size: contain;
 }
-.printables__01 {
-  background-image: url("/printable-01.1fccfff4.png");
+.protest-printables__printable img {
+  max-width: 200px;
+  margin-bottom: 20px;
 }
-.printables__02 {
-  background-image: url("/printable-02.bf4963b3.png");
+.protest-printables__downloads {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.protest-printables__downloads a {
+  color: blue;
+  text-decoration: none;
+}
+.protest-printables__downloads a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=/main.fb6bbcaf.css.map */
