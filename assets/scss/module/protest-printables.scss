@@ -1,12 +1,20 @@
 .protest-printables {
-    padding: 40px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
+    @media(min-width: 500px) {
+        padding: 40px 20px 0px 20px;
+    }
     h3 {
-        margin-bottom: 30px;
-        font-size: 2.1em;
+        margin-bottom: 20px;
+        font-size: 1.4em;
         font-weight: 700;
-        line-height: 1.1em;
+        line-height: 1.2em;
         color: #000;
+        @media(min-width: 500px) {
+          margin-bottom: 30px;
+          font-size: 2.1em;
+          line-height: 1.1em;
+        }
     }
     &__wrapper {
         max-width: 800px;
@@ -14,12 +22,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        @media(min-width: 630px) {
+            flex-direction: row;
+        }
     }
     &__printable {
-        margin: 0 20px;
+        margin: 0 20px 30px 20px;
         display: block;
         background-position: center;
         background-size: contain;
+        @media(min-width: 630px) {
+            margin: 0 20px;
+        }
         img {
             max-width: 200px;
             margin-bottom: 20px;

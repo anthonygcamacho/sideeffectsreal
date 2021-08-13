@@ -96,19 +96,22 @@ body {
 
 .header {
   width: 100%;
-  height: 50px;
+  height: 80px;
   text-align: center;
   background-color: #590000;
-  border-bottom: 1px solid #333;
   position: fixed;
   top: 0;
   left: 0;
 }
+@media (min-width: 720px) {
+  .header {
+    height: 50px;
+  }
+}
 .header__wrapper {
-  max-width: 1200px;
+  max-width: 1240px;
   height: 50px;
   margin: 0 auto;
-  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -116,17 +119,19 @@ body {
 }
 @media (min-width: 720px) {
   .header__wrapper {
-    padding: 0;
+    padding: 0 20px;
     flex-direction: row;
   }
 }
 .header__wrapper h1 {
+  margin-top: 12px;
+  font-size: 1.3em;
+  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 720px) {
   .header__wrapper h1 {
-    font-size: 1.3em;
-    font-weight: 700;
+    margin-top: 0;
     text-align: left;
   }
 }
@@ -138,17 +143,25 @@ body {
   color: #d7d7d7;
 }
 .header__nav {
+  width: 100%;
+  margin-top: 12px;
+  padding: 7px;
+  background-color: #2e0000;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 720px) {
   .header__nav {
-    flex-direction: row;
+    width: inherit;
+    margin-top: 0;
+    padding: 0;
+    background-color: inherit;
   }
 }
 .header__nav a {
-  margin-bottom: 15px;
+  margin: 0 10px;
   font-size: 1.3em;
   color: #fff;
   font-weight: 700;
@@ -156,8 +169,7 @@ body {
 }
 @media (min-width: 720px) {
   .header__nav a {
-    margin-bottom: 0;
-    margin-left: 40px;
+    margin: 0 0 0 40px;
   }
 }
 .header__nav a:hover {
@@ -178,17 +190,42 @@ body {
   margin: 20px 0;
   text-align: center;
 }
-.footer .footer__row__1 a {
-  margin: 0 12px;
+.footer .footer__row a {
+  margin: 0 5px;
+  font-size: 0.8em;
+  text-decoration: none;
 }
-.footer .footer__row__2 a {
-  margin: 0 12px;
+@media (min-width: 840px) {
+  .footer .footer__row a {
+    margin: 0 12px;
+    font-size: 1em;
+    flex-direction: row;
+  }
 }
-.footer .footer__row__3 span {
-  margin: 0 6px;
+.footer .footer__row a:hover {
+  text-decoration: underline;
+}
+.footer .footer__row__1 {
+  line-height: 1.5em;
+}
+.footer .footer__row__1 br {
+  display: inline;
+}
+@media (min-width: 500px) {
+  .footer .footer__row__1 br {
+    display: none;
+  }
+}
+.footer .footer__row__2 {
+  line-height: 1.2em;
 }
 .home .banner {
-  margin-top: 50px;
+  margin-top: 80px;
+}
+@media (min-width: 720px) {
+  .home .banner {
+    margin-top: 50px;
+  }
 }
 .home .banner__wrapper {
   background-image: url("/home-banner.9ca87231.png");
@@ -199,11 +236,29 @@ body {
   align-items: center;
 }
 .home .banner__wrapper h2 {
-  padding: 130px 20px;
-  font-size: 7em;
+  padding: 20px 20px;
+  font-size: 2em;
   font-weight: 900;
   line-height: 1.1em;
   color: #fff;
+}
+@media (min-width: 500px) {
+  .home .banner__wrapper h2 {
+    padding: 60px 20px;
+    font-size: 4em;
+  }
+}
+@media (min-width: 720px) {
+  .home .banner__wrapper h2 {
+    padding: 80px 20px;
+    font-size: 6em;
+  }
+}
+@media (min-width: 1200px) {
+  .home .banner__wrapper h2 {
+    padding: 130px 20px;
+    font-size: 7em;
+  }
 }
 .home .ameri-first {
   background-color: #590000;
@@ -212,25 +267,75 @@ body {
   align-items: center;
 }
 .home .ameri-first h3 {
-  padding: 40px 20px;
-  font-size: 3em;
+  padding: 15px 20px;
+  font-size: 1.2em;
   font-weight: 900;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #b8b8b8;
 }
+@media (min-width: 500px) {
+  .home .ameri-first h3 {
+    padding: 20px 20px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 625px) {
+  .home .ameri-first h3 {
+    padding: 30px 20px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 720px) {
+  .home .ameri-first h3 {
+    padding: 30px 20px;
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 840px) {
+  .home .ameri-first h3 {
+    padding: 30px 20px;
+    font-size: 2.6em;
+  }
+}
+@media (min-width: 1200px) {
+  .home .ameri-first h3 {
+    padding: 40px 20px;
+    font-size: 3em;
+  }
+}
+.home .ameri-first h3 br {
+  display: inline;
+}
+@media (min-width: 625px) {
+  .home .ameri-first h3 br {
+    display: none;
+  }
+}
 .home .about-home {
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
+@media (min-width: 500px) {
+  .home .about-home {
+    padding: 60px 20px;
+  }
+}
 .home .about-home h3 {
-  margin-bottom: 30px;
-  font-size: 2.1em;
+  margin-bottom: 20px;
+  font-size: 1.4em;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #000;
 }
+@media (min-width: 500px) {
+  .home .about-home h3 {
+    margin-bottom: 30px;
+    font-size: 2.1em;
+    line-height: 1.1em;
+  }
+}
 .home .about-home__content-wrapper {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
 }
@@ -247,19 +352,29 @@ body {
   text-align: center;
 }
 .home .protests__header-wrapper {
-  padding: 40px 20px;
+  padding: 25px 20px;
   background-color: #ff0000;
 }
+@media (min-width: 690px) {
+  .home .protests__header-wrapper {
+    padding: 40px 20px;
+  }
+}
 .home .protests__header-wrapper h3 {
-  font-size: 2.1em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.1em;
   color: #fff;
 }
+@media (min-width: 690px) {
+  .home .protests__header-wrapper h3 {
+    font-size: 2.1em;
+  }
+}
 .home .protests__protest {
-  width: 1000px;
-  height: 300px;
-  margin: 20px auto;
+  max-width: 1000px;
+  height: 210px;
+  margin: 20px;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -267,11 +382,31 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .home .protests__protest {
+    margin: 20px auto;
+    height: 300px;
+  }
+}
 .home .protests__protest h4 {
   margin-bottom: 25px;
-  font-size: 1.8em;
+  font-size: 1.5em;
+  line-height: 1.3em;
   font-weight: 700;
   color: #fff;
+}
+@media (min-width: 690px) {
+  .home .protests__protest h4 {
+    font-size: 1.8em;
+  }
+}
+.home .protests__protest h4 br {
+  display: inline;
+}
+@media (min-width: 690px) {
+  .home .protests__protest h4 br {
+    display: none;
+  }
 }
 .home .protests__washingtondc {
   background-image: url("/home-protest-washingtondc.a9084d76.png");
@@ -289,9 +424,15 @@ body {
   display: inline-block;
 }
 .more-info-btn__large {
-  padding: 20px 30px;
-  font-size: 1.2em;
+  padding: 15px 20px;
+  font-size: 1em;
   font-weight: 700;
+}
+@media (min-width: 690px) {
+  .more-info-btn__large {
+    padding: 20px 30px;
+    font-size: 1.2em;
+  }
 }
 .more-info-btn__mini {
   padding: 15px 20px;
@@ -304,19 +445,61 @@ body {
 }
 
 .protest-banner {
-  margin-top: 50px;
+  margin-top: 80px;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 720px) {
+  .protest-banner {
+    margin-top: 50px;
+  }
+}
 .protest-banner h2 {
-  padding: 130px 20px;
-  font-size: 3em;
+  padding: 30px 20px;
+  font-size: 1.8em;
   font-weight: 900;
-  line-height: 1.1em;
+  line-height: 1.3em;
   color: #fff;
+}
+@media (min-width: 480px) {
+  .protest-banner h2 {
+    padding: 70px 20px;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+}
+@media (min-width: 720px) {
+  .protest-banner h2 {
+    padding: 70px 20px;
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+}
+@media (min-width: 1260px) {
+  .protest-banner h2 {
+    padding: 130px 20px;
+    font-size: 3em;
+    line-height: 1.1em;
+  }
+}
+.protest-banner h2 .break01 {
+  display: inline;
+}
+@media (min-width: 900px) {
+  .protest-banner h2 .break01 {
+    display: none;
+  }
+}
+.protest-banner h2 .break02 {
+  display: inline;
+}
+@media (min-width: 1260px) {
+  .protest-banner h2 .break02 {
+    display: none;
+  }
 }
 .protest-banner__media {
   background-image: url("/home-protest-media.3abbc7d5.png");
@@ -326,18 +509,30 @@ body {
 }
 
 .protest-instructions {
-  padding: 60px 20px 0px 20px;
+  padding: 30px 20px 0 20px;
   text-align: center;
 }
+@media (min-width: 500px) {
+  .protest-instructions {
+    padding: 60px 20px 0 20px;
+  }
+}
 .protest-instructions h3 {
-  margin-bottom: 30px;
-  font-size: 2.1em;
+  margin-bottom: 20px;
+  font-size: 1.4em;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #000;
 }
+@media (min-width: 500px) {
+  .protest-instructions h3 {
+    margin-bottom: 30px;
+    font-size: 2.1em;
+    line-height: 1.1em;
+  }
+}
 .protest-instructions__content-wrapper {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
 }
@@ -354,15 +549,22 @@ body {
 }
 
 .protest-locations {
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 .protest-locations h3 {
-  margin-bottom: 30px;
-  font-size: 2.1em;
+  margin-bottom: 20px;
+  font-size: 1.4em;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #000;
+}
+@media (min-width: 500px) {
+  .protest-locations h3 {
+    margin-bottom: 30px;
+    font-size: 2.1em;
+    line-height: 1.1em;
+  }
 }
 .protest-locations__locations {
   max-width: 840px;
@@ -370,13 +572,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 840px) {
+  .protest-locations__locations {
+    flex-direction: row;
+  }
 }
 .protest-locations__location {
-  width: 280px;
-  height: 160px;
-  margin: 0 20px 40px 20px;
+  width: 220px;
+  height: 130px;
+  margin: 0 20px 20px 20px;
   padding: 20px;
   border: 10px solid #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 840px) {
+  .protest-locations__location {
+    width: 280px;
+    height: 160px;
+    margin: 0 20px 40px 20px;
+  }
 }
 .protest-locations__location h4 {
   margin-bottom: 15px;
@@ -395,15 +613,27 @@ body {
 }
 
 .protest-printables {
-  padding: 40px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
   text-align: center;
 }
+@media (min-width: 500px) {
+  .protest-printables {
+    padding: 40px 20px 0px 20px;
+  }
+}
 .protest-printables h3 {
-  margin-bottom: 30px;
-  font-size: 2.1em;
+  margin-bottom: 20px;
+  font-size: 1.4em;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #000;
+}
+@media (min-width: 500px) {
+  .protest-printables h3 {
+    margin-bottom: 30px;
+    font-size: 2.1em;
+    line-height: 1.1em;
+  }
 }
 .protest-printables__wrapper {
   max-width: 800px;
@@ -411,12 +641,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 630px) {
+  .protest-printables__wrapper {
+    flex-direction: row;
+  }
 }
 .protest-printables__printable {
-  margin: 0 20px;
+  margin: 0 20px 30px 20px;
   display: block;
   background-position: center;
   background-size: contain;
+}
+@media (min-width: 630px) {
+  .protest-printables__printable {
+    margin: 0 20px;
+  }
 }
 .protest-printables__printable img {
   max-width: 200px;

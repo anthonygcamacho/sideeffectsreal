@@ -6,9 +6,13 @@
   border-radius: 10px;
   display: inline-block;
   &__large {
-    padding: 20px 30px;
-    font-size: 1.2em;
+    padding: 15px 20px;
+    font-size: 1em;
     font-weight: 700;
+    @media(min-width: 690px) {
+      padding: 20px 30px;
+      font-size: 1.2em;
+    }
   }
   &__mini {
     padding: 15px 20px;
