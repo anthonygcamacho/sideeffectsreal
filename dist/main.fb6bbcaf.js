@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../imgs/home-banner.png":[["home-banner.9ca87231.png","imgs/home-banner.png"],"imgs/home-banner.png"],"./../imgs/home-protest-washingtondc.png":[["home-protest-washingtondc.a9084d76.png","imgs/home-protest-washingtondc.png"],"imgs/home-protest-washingtondc.png"],"./../imgs/home-protest-media.png":[["home-protest-media.3abbc7d5.png","imgs/home-protest-media.png"],"imgs/home-protest-media.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
+},{"./../imgs/home-banner-03.png":[["home-banner-03.52659b06.png","imgs/home-banner-03.png"],"imgs/home-banner-03.png"],"./../imgs/home-protest-media.png":[["home-protest-media.3abbc7d5.png","imgs/home-protest-media.png"],"imgs/home-protest-media.png"],"./../imgs/home-protest-washingtondc.png":[["home-protest-washingtondc.a9084d76.png","imgs/home-protest-washingtondc.png"],"imgs/home-protest-washingtondc.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
 require("./../scss/main.scss");
@@ -226,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39921" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40705" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
